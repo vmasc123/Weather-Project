@@ -17,6 +17,7 @@ currentMinutes = currentMinutes > 9 ? currentMinutes : "0" + currentMinutes;
 todaysDate.innerHTML = `${currentDay}, ${currentHour}:${currentMinutes}`;
 
 //Show searched location//
+
 function showTemp(response) {
   let city = response.data.name;
   let temperature = Math.round(response.data.main.temp);
@@ -25,7 +26,7 @@ function showTemp(response) {
   cityElement.innerHTML = `${city}`;
   temperatureElement.innerHTML = `${temperature}`;
 
-  // To change humidity and wind and precipitation//
+  // To change humidity, wind, and description//
 
   let humidity = response.data.main.humidity;
   console.log(response.data.main);
