@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project WireFrame</title>
+    <link rel="style.css" href="src/styles.css" />
+    <script src="https://kit.fontawesome.com/590a7c7a36.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   </head>
+<body>
+    <div class="container">
+    <h1 id="change-city">
+      <strong>
+        Toronto
+      </strong>
+    </h1>
+    <h2 id="currentDateTime">
+      Tuesday 16:00
+    </h2>
+    <p>
+        <div class="temperature">
+            <i class="fas fa-cloud"> </i> <span id = "temperature"> 0 </span> </class>
+            <span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+            </span> 
+        </div>
+    <div class="weather">
+        <div>
+         Weather: <span id="description">Cloudy</span> 
+        </div>
+        <div>
+         Wind: <span id="wind">1 m/s</span>
+        </div>
+        <div>
+        Humidity: <span id="humidity">68%</span>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+       <div class="row">
+           <div class="col">
+              <i class="fas fa-cloud-sun"></i>
+              <br />
+              <span id="monday">
+              Monday
+              <br />
+              3°/<em>-4°</em> 
+              </span>
+           </div>
+           <div class="col">
+              <i class="fas fa-cloud-sun"></i>
+              <br />
+              <span id="tuesday">
+              Tuesday
+              <br />
+              -3°/<em>-6°</em> 
+              </span>
+           </div>
+           <div class="col">
+              <i class="fas fa-cloud"></i>
+              <br />
+              <span id="wednesday">
+              Wednesday 
+              <br />
+              -2°/<em>-6°</em>
+              </span>
+           </div>
+           <div class="col">
+              <i class="fas fa-cloud-sun"></i>
+              <br />
+              <span id="Thursday">
+              Thursday
+              <br />
+              -3°/<em>-6°</em> 
+              </span>
+           </div>
+           <div class="col">
+              <i class="fas fa-cloud-sun"></i>
+              <br />
+              <span id="friday">
+              Friday
+              <br />
+              0°/<em>-1°</em> 
+              </span>
+           </div>
+           <div class="col">
+              <i class="fas fa-cloud"></i>
+              <br />
+              <span id="saturday">
+              Saturday
+              <br />
+              3°/<em>1°</em>
+              </span>
+           </div>
+       </div>
+       <br />
+       <br />
+       <br />
+       <form class="search">
+           <input class="enter" id="search-city" type="text" autofocus="on" placeholder="Enter a city here" class="border" />
+           <br />
+           <br />
+           <input class="button" id="submit" type="submit" value="Search" /> 
+           <br />
+           <br /> 
+           <button class="currentLocation">
+               Current Location 
+           </button>
+         </p>    
+       </form>
+    </p>
+</div>
+</body>
+  <script src="src/index.js">
+  </script>
+</html>
