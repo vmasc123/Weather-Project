@@ -26,7 +26,7 @@ function showTemp(response) {
   cityElement.innerHTML = `${city}`;
   temperatureElement.innerHTML = `${temperature}`;
 
-  // To change humidity, wind, and description//
+  // To change humidity, wind, and weather//
 
   let humidity = response.data.main.humidity;
   console.log(response.data.main);
