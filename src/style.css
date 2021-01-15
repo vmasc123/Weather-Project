@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(233, 245, 255);
+  background-image: linear-gradient(to top, #accbee 60%, #e7f0fd 100%);
 }
 
 h1 {
@@ -19,6 +19,10 @@ small {
 small a {
   text-decoration: none;
   text-align: center;
+}
+
+.icon {
+  font-size: 30px;
 }
 
 .container {
