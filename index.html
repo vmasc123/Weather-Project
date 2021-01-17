@@ -9,15 +9,15 @@
     <script src="https://kit.fontawesome.com/590a7c7a36.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    </head>
-<body>
+   <body>
     <div class="container">
     <h1 id="change-city">
       <strong>
         Toronto
       </strong>
     </h1>
-    <h2 id="currentDateTime">
-      Tuesday 16:00
+    <h2>
+      Last Updated: <span id="date"> </span>
     </h2>
     <p>
         <div class="temperature">
@@ -52,52 +52,42 @@
       <br />
       <br />
       <br />
-       <div class="row">
+       <div class="row" id="forecast">
            <div class="col">
-              <i class="fas fa-cloud-sun"></i>
+              <strong>12:00</strong>
               <br />
-              <span id="monday">
-              Monday
-              <br />
-              3°/<em>-4°</em> 
-              </span>
+              <img src="https://openweathermap.org/img/wn/02n@2x.png";/>
+               <br/>
+              3 /<em>-4°</em> 
            </div>
            <div class="col">
-              <i class="fas fa-cloud-sun"></i>
-              <br />
-              <span id="tuesday">
-              Tuesday
-              <br />
-              -3°/<em>-6°</em> 
-              </span>
-           </div>
-           <div class="col">
-              <i class="fas fa-cloud"></i>
-              <br />
-              <span id="wednesday">
-              Wednesday 
-              <br />
-              -2°/<em>-6°</em>
-              </span>
-           </div>
-           <div class="col">
-              <i class="fas fa-cloud-sun"></i>
-              <br />
-              <span id="Thursday">
-              Thursday
-              <br />
-              -3°/<em>-6°</em> 
-              </span>
-           </div>
-           <div class="col">
-              <i class="fas fa-cloud-sun"></i>
-              <br />
-              <span id="friday">
-              Friday
-              <br />
-              0°/<em>-1°</em> 
-              </span>
-           </div>
+             <strong>15:00</strong>
+             <br />
+             <img src="https://openweathermap.org/img/wn/02n@2x.png";/>
+             <br />
+             -3°/<em>-6°</em> 
+          </div>
+          <div class="col">
+            <strong>18:00</strong>
+            <br />
+            <img src="https://openweathermap.org/img/wn/02n@2x.png";/>
+            <br />
+             -2°/<em>-6°</em>
+          </div>
+          <div class="col">
+            <strong>21:00</strong>
+            <br />
+            <img src="https://openweathermap.org/img/wn/02n@2x.png";/>
+            <br />
+             -3°/<em>-6°</em> 
+          </div>
+          <div class="col">
+            <strong>24:00</strong>
+            <br />
+            <img src="https://openweathermap.org/img/wn/02n@2x.png";/>
+            <br />
+             0°/<em>-1°</em> 
+          </div>
        </div>
        <br />
        <br />
