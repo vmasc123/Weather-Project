@@ -121,7 +121,7 @@ function formatForecastHours(timestamp) {
 function showCurrentLocationForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
-
+  
   for (let index = 0; index < 5; index++) {
     let forecast = response.data.list[index];
     forecastElement.innerHTML += `<div class="col" id="#forecast">
