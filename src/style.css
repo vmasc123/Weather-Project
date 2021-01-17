@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to top, #accbee 60%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, #accbee 72%, #e7f0fd 100%);
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 small {
@@ -82,12 +82,4 @@ small a {
   border-radius: 10px;
   padding: 2px 20px;
   box-shadow: 1px 1px;
-}
-
-.fa-cloud-sun {
-  font-size: 30px;
-}
-
-.fa-cloud {
-  font-size: 30px;
 }
