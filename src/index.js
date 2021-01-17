@@ -48,9 +48,7 @@ function showForecast(response) {
               }@2x.png"
                 />
               <br />
-              ${Math.round(forecast.main.temp_max)}°C / <em>${Math.round(
-      forecast.main.temp_min
-    )}°C
+              ${Math.round(forecast.main.temp_max)}°C / <em>${Math.round(forecast.main.temp_min)}°C
               </em> 
            </div>`;
   }
@@ -135,9 +133,7 @@ function showCurrentLocationForecast(response) {
               }@2x.png"
                 />
               <br />
-              ${Math.round(forecast.main.temp_max)}°C / <em>${Math.round(
-      forecast.main.temp_min
-    )}°C
+              ${Math.round(forecast.main.temp_max)}°C / <em>${Math.round(forecast.main.temp_min)}°C
     </em> 
     </div>`;
   }
