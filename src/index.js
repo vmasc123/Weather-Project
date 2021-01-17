@@ -121,9 +121,10 @@ function formatForecastHours(timestamp) {
 function showCurrentLocationForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
+  let forecast = null;
   
   for (let index = 0; index < 5; index++) {
-    let forecast = response.data.list[index];
+    forecast = response.data.list[index];
     forecastElement.innerHTML += `<div class="col" id="#forecast">
               <strong>${formatForecastHours(forecast.dt * 1000)}</strong>
               <br />
@@ -173,7 +174,7 @@ function showCurrentLocationTemp(response) {
 }
 
 function searchLocation(position) {
-  let latitude = position.coords.latitude;
+  let latitude =  position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiKey = "374252187c262a7fb1ad4bdc00cf1626";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
@@ -184,6 +185,8 @@ function searchLocation(position) {
 }
 
 function getCurrentLocation(event) {
+  event.preventDefault();
+  
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
